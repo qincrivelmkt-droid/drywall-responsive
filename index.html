@@ -21,11 +21,8 @@
     --branco: #FFFFFF;
     --verde-ok: #4CAF50;
   }
-
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
   html { scroll-behavior: smooth; }
-
   body {
     font-family: 'Barlow', sans-serif;
     background: var(--cinza-escuro);
@@ -35,9 +32,7 @@
     overflow-x: hidden;
   }
 
-  .display { font-family: 'Barlow Condensed', sans-serif; }
-
-  /* HEADER FIXO */
+  /* HEADER */
   header {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -50,7 +45,6 @@
     align-items: center;
     justify-content: space-between;
   }
-
   .logo {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 20px;
@@ -58,9 +52,7 @@
     letter-spacing: 0.04em;
     color: var(--branco);
   }
-
   .logo span { color: var(--amarelo); }
-
   .header-cta {
     background: var(--amarelo);
     color: var(--cinza-escuro);
@@ -73,7 +65,6 @@
     transition: background 0.2s;
     white-space: nowrap;
   }
-
   .header-cta:hover { background: var(--amarelo-escuro); }
 
   /* HERO */
@@ -85,13 +76,11 @@
     position: relative;
     overflow: hidden;
   }
-
   .hero-bg {
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg, #1A1A1A 0%, #222018 50%, #1A1A1A 100%);
   }
-
   .hero-pattern {
     position: absolute;
     inset: 0;
@@ -100,7 +89,6 @@
       repeating-linear-gradient(0deg, transparent, transparent 39px, #E8A020 39px, #E8A020 40px),
       repeating-linear-gradient(90deg, transparent, transparent 39px, #E8A020 39px, #E8A020 40px);
   }
-
   .hero-accent {
     position: absolute;
     top: 0; right: 0;
@@ -108,14 +96,12 @@
     height: 100%;
     background: linear-gradient(135deg, transparent 30%, rgba(232,160,32,0.06) 100%);
   }
-
   .hero-inner {
     position: relative;
     max-width: 680px;
     width: 100%;
     margin: 0 auto;
   }
-
   .hero-badge {
     display: inline-flex;
     align-items: center;
@@ -131,15 +117,12 @@
     opacity: 0;
     animation: fadeUp 0.6s 0.1s forwards;
   }
-
   .hero-badge::before {
     content: '';
-    width: 6px;
-    height: 6px;
+    width: 6px; height: 6px;
     border-radius: 50%;
     background: var(--amarelo);
   }
-
   .hero h1 {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: clamp(42px, 8vw, 72px);
@@ -151,9 +134,7 @@
     opacity: 0;
     animation: fadeUp 0.6s 0.2s forwards;
   }
-
   .hero h1 .destaque { color: var(--amarelo); }
-
   .hero-sub {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: clamp(28px, 5vw, 46px);
@@ -165,7 +146,6 @@
     opacity: 0;
     animation: fadeUp 0.6s 0.3s forwards;
   }
-
   .hero-desc {
     font-size: 17px;
     color: #C8BFA8;
@@ -175,7 +155,6 @@
     opacity: 0;
     animation: fadeUp 0.6s 0.4s forwards;
   }
-
   .hero-ctas {
     display: flex;
     flex-wrap: wrap;
@@ -183,7 +162,6 @@
     opacity: 0;
     animation: fadeUp 0.6s 0.5s forwards;
   }
-
   .btn-primary {
     display: inline-flex;
     align-items: center;
@@ -198,14 +176,8 @@
     transition: all 0.2s;
     letter-spacing: 0.01em;
   }
-
-  .btn-primary:hover {
-    background: var(--amarelo-escuro);
-    transform: translateY(-1px);
-  }
-
+  .btn-primary:hover { background: var(--amarelo-escuro); transform: translateY(-1px); }
   .btn-primary svg { width: 20px; height: 20px; flex-shrink: 0; }
-
   .btn-ghost {
     display: inline-flex;
     align-items: center;
@@ -220,12 +192,7 @@
     border: 1px solid var(--cinza-borda);
     transition: all 0.2s;
   }
-
-  .btn-ghost:hover {
-    border-color: var(--amarelo);
-    color: var(--amarelo);
-  }
-
+  .btn-ghost:hover { border-color: var(--amarelo); color: var(--amarelo); }
   .hero-stats {
     display: flex;
     gap: 40px;
@@ -235,8 +202,6 @@
     opacity: 0;
     animation: fadeUp 0.6s 0.6s forwards;
   }
-
-  .stat-item {}
   .stat-num {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 36px;
@@ -244,11 +209,7 @@
     color: var(--amarelo);
     line-height: 1;
   }
-  .stat-label {
-    font-size: 13px;
-    color: var(--texto-muted);
-    margin-top: 4px;
-  }
+  .stat-label { font-size: 13px; color: var(--texto-muted); margin-top: 4px; }
 
   /* DIFERENCIAIS */
   .diferenciais {
@@ -256,9 +217,7 @@
     border-top: 1px solid var(--cinza-borda);
     border-bottom: 1px solid var(--cinza-borda);
     padding: 20px 24px;
-    overflow: hidden;
   }
-
   .diferenciais-inner {
     max-width: 900px;
     margin: 0 auto;
@@ -268,7 +227,6 @@
     align-items: center;
     justify-content: center;
   }
-
   .dif-item {
     display: flex;
     align-items: center;
@@ -278,26 +236,17 @@
     color: #C8BFA8;
     white-space: nowrap;
   }
-
   .dif-item::before {
     content: '';
-    width: 6px;
-    height: 6px;
+    width: 6px; height: 6px;
     border-radius: 50%;
     background: var(--amarelo);
     flex-shrink: 0;
   }
 
-  /* SECTIONS GERAIS */
-  section {
-    padding: 80px 24px;
-  }
-
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
+  /* SECTIONS */
+  section { padding: 80px 24px; }
+  .container { max-width: 900px; margin: 0 auto; }
   .section-tag {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 12px;
@@ -307,7 +256,6 @@
     color: var(--amarelo);
     margin-bottom: 16px;
   }
-
   .section-title {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: clamp(32px, 5vw, 48px);
@@ -316,7 +264,6 @@
     line-height: 1.05;
     margin-bottom: 20px;
   }
-
   .section-desc {
     font-size: 17px;
     color: #C8BFA8;
@@ -325,38 +272,109 @@
     margin-bottom: 48px;
   }
 
-  /* DOR */
-  .dor-section {
-    background: var(--cinza-medio);
+  /* SOBRE O GABRIEL */
+  .sobre-section { background: var(--cinza-medio); }
+  .sobre-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 56px;
+    align-items: center;
+    margin-top: 48px;
+  }
+  @media (max-width: 680px) {
+    .sobre-grid { grid-template-columns: 1fr; gap: 32px; }
+    .sobre-foto-wrap { max-width: 240px; margin: 0 auto; }
+  }
+  .sobre-foto-wrap {
+    position: relative;
+  }
+  .sobre-foto-wrap img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+  }
+  .sobre-foto-badge {
+    position: absolute;
+    bottom: -16px;
+    right: -16px;
+    background: var(--amarelo);
+    color: var(--cinza-escuro);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 16px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 1.3;
+    text-transform: uppercase;
+  }
+  .sobre-foto-badge strong {
+    display: block;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1;
+  }
+  .sobre-texto h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .sobre-texto .sobre-cargo {
+    font-size: 15px;
+    color: var(--amarelo);
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+  .sobre-texto p {
+    font-size: 16px;
+    color: #C8BFA8;
+    line-height: 1.75;
+    margin-bottom: 16px;
+  }
+  .sobre-nums {
+    display: flex;
+    gap: 32px;
+    margin-top: 32px;
+    padding-top: 28px;
+    border-top: 1px solid var(--cinza-borda);
+    flex-wrap: wrap;
+  }
+  .sobre-num-item .num {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--amarelo);
+    line-height: 1;
+  }
+  .sobre-num-item .label {
+    font-size: 13px;
+    color: var(--texto-muted);
+    margin-top: 2px;
   }
 
+  /* DOR */
+  .dor-section { background: var(--cinza-escuro); }
   .dor-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 16px;
     margin-top: 40px;
   }
-
   .dor-card {
     background: var(--cinza-card);
     border: 1px solid var(--cinza-borda);
     border-radius: 8px;
     padding: 24px;
   }
-
-  .dor-icon {
-    font-size: 28px;
-    margin-bottom: 12px;
-    line-height: 1;
-  }
-
-  .dor-card p {
-    font-size: 15px;
-    color: #C8BFA8;
-    line-height: 1.6;
-  }
+  .dor-icon { font-size: 28px; margin-bottom: 12px; line-height: 1; }
+  .dor-card p { font-size: 15px; color: #C8BFA8; line-height: 1.6; }
 
   /* SOLUÇÃO */
+  .solucao-section { background: var(--cinza-medio); }
   .solucao-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -364,11 +382,7 @@
     align-items: center;
     margin-top: 48px;
   }
-
-  @media (max-width: 680px) {
-    .solucao-grid { grid-template-columns: 1fr; }
-  }
-
+  @media (max-width: 680px) { .solucao-grid { grid-template-columns: 1fr; } }
   .solucao-texto h3 {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 26px;
@@ -377,67 +391,32 @@
     margin-bottom: 16px;
     color: var(--amarelo);
   }
-
   .solucao-texto p {
     font-size: 16px;
     color: #C8BFA8;
     line-height: 1.7;
     margin-bottom: 16px;
   }
-
-  .solucao-visual {
-    background: var(--cinza-card);
-    border: 1px solid var(--cinza-borda);
+  .solucao-foto {
     border-radius: 8px;
     overflow: hidden;
     aspect-ratio: 4/3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    padding: 32px;
-    text-align: center;
-    position: relative;
   }
-
-  .foto-placeholder {
-    background: var(--cinza-card);
-    border: 2px dashed var(--cinza-borda);
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    padding: 32px 20px;
-    text-align: center;
-    color: var(--texto-muted);
-  }
-
-  .foto-placeholder svg {
-    width: 40px;
-    height: 40px;
-    opacity: 0.5;
-  }
-
-  .foto-placeholder span {
-    font-size: 13px;
-    line-height: 1.5;
+  .solucao-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 
   /* SERVIÇOS */
-  .servicos-section {
-    background: var(--cinza-escuro);
-  }
-
+  .servicos-section { background: var(--cinza-escuro); }
   .servicos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     margin-top: 48px;
   }
-
   .servico-card {
     background: var(--cinza-card);
     border: 1px solid var(--cinza-borda);
@@ -447,15 +426,8 @@
     overflow: hidden;
     transition: border-color 0.2s;
   }
-
-  .servico-card:hover {
-    border-color: rgba(232,160,32,0.4);
-  }
-
-  .servico-card.destaque {
-    border-color: rgba(232,160,32,0.5);
-  }
-
+  .servico-card:hover { border-color: rgba(232,160,32,0.4); }
+  .servico-card.destaque { border-color: rgba(232,160,32,0.5); }
   .servico-card.destaque::before {
     content: 'FOCO PRINCIPAL';
     position: absolute;
@@ -468,7 +440,6 @@
     padding: 4px 36px;
     transform: rotate(45deg);
   }
-
   .servico-num {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 48px;
@@ -477,7 +448,6 @@
     line-height: 1;
     margin-bottom: 16px;
   }
-
   .servico-card h3 {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 22px;
@@ -486,25 +456,16 @@
     color: var(--branco);
     margin-bottom: 10px;
   }
-
-  .servico-card p {
-    font-size: 15px;
-    color: var(--texto-muted);
-    line-height: 1.6;
-  }
+  .servico-card p { font-size: 15px; color: var(--texto-muted); line-height: 1.6; }
 
   /* BENEFÍCIOS */
-  .beneficios-section {
-    background: var(--cinza-medio);
-  }
-
+  .beneficios-section { background: var(--cinza-medio); }
   .beneficios-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 16px;
     margin-top: 40px;
   }
-
   .beneficio-item {
     display: flex;
     align-items: flex-start;
@@ -514,10 +475,8 @@
     border: 1px solid var(--cinza-borda);
     border-radius: 8px;
   }
-
   .beneficio-check {
-    width: 24px;
-    height: 24px;
+    width: 24px; height: 24px;
     border-radius: 50%;
     background: rgba(76,175,80,0.15);
     border: 1px solid rgba(76,175,80,0.3);
@@ -527,106 +486,79 @@
     flex-shrink: 0;
     margin-top: 1px;
   }
-
-  .beneficio-check svg {
-    width: 12px;
-    height: 12px;
-    stroke: var(--verde-ok);
-    stroke-width: 2.5;
-  }
-
-  .beneficio-item p {
-    font-size: 15px;
-    color: #C8BFA8;
-    line-height: 1.6;
-  }
+  .beneficio-check svg { width: 12px; height: 12px; stroke: var(--verde-ok); stroke-width: 2.5; }
+  .beneficio-item p { font-size: 15px; color: #C8BFA8; line-height: 1.6; }
 
   /* GALERIA */
-  .galeria-section {
-    background: var(--cinza-escuro);
-  }
-
+  .galeria-section { background: var(--cinza-escuro); }
   .galeria-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
     margin-top: 40px;
   }
-
-  @media (max-width: 560px) {
-    .galeria-grid { grid-template-columns: repeat(2, 1fr); }
-  }
-
+  @media (max-width: 560px) { .galeria-grid { grid-template-columns: repeat(2, 1fr); } }
   .galeria-item {
     aspect-ratio: 1;
-    background: var(--cinza-card);
-    border: 2px dashed var(--cinza-borda);
     border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+    overflow: hidden;
+    background: var(--cinza-card);
+    border: 1px solid var(--cinza-borda);
     cursor: pointer;
-    transition: border-color 0.2s;
-    padding: 16px;
-    text-align: center;
+    position: relative;
   }
-
   .galeria-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 6px;
-    display: none;
+    display: block;
+    transition: transform 0.4s;
   }
-
-  .galeria-item:hover { border-color: var(--amarelo); }
-
-  .galeria-placeholder-text {
-    font-size: 12px;
-    color: var(--texto-muted);
-    line-height: 1.5;
+  .galeria-item:hover img { transform: scale(1.05); }
+  .galeria-item .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0);
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+  .galeria-item:hover .overlay { background: rgba(232,160,32,0.15); }
 
-  .galeria-placeholder-icon {
-    width: 32px;
-    height: 32px;
-    opacity: 0.3;
-    stroke: var(--texto-muted);
+  /* VÍDEO */
+  .video-section { background: var(--cinza-medio); }
+  .video-wrap {
+    margin-top: 40px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--cinza-borda);
+    background: #000;
+    max-width: 780px;
+  }
+  .video-wrap video {
+    width: 100%;
+    display: block;
+    max-height: 480px;
+    object-fit: cover;
   }
 
   /* DEPOIMENTOS */
-  .depoimentos-section {
-    background: var(--cinza-medio);
-  }
-
+  .depoimentos-section { background: var(--cinza-escuro); }
   .depoimentos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
     margin-top: 40px;
   }
-
   .depoimento-card {
     background: var(--cinza-card);
     border: 1px solid var(--cinza-borda);
     border-radius: 8px;
     padding: 28px;
   }
-
-  .estrelas {
-    display: flex;
-    gap: 4px;
-    margin-bottom: 16px;
-  }
-
-  .estrela {
-    width: 16px;
-    height: 16px;
-    fill: var(--amarelo);
-  }
-
+  .estrelas { display: flex; gap: 4px; margin-bottom: 16px; }
+  .estrela { width: 16px; height: 16px; fill: var(--amarelo); }
   .depoimento-card blockquote {
     font-size: 15px;
     color: #C8BFA8;
@@ -636,52 +568,22 @@
     border: none;
     padding: 0;
   }
-
-  .depoimento-autor {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .autor-avatar {
-    width: 40px;
-    height: 40px;
+  .depoimento-autor { display: flex; align-items: center; gap: 12px; }
+  .autor-foto {
+    width: 44px; height: 44px;
     border-radius: 50%;
-    background: rgba(232,160,32,0.15);
-    border: 1px solid rgba(232,160,32,0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--amarelo);
+    overflow: hidden;
     flex-shrink: 0;
+    border: 2px solid rgba(232,160,32,0.3);
+    background: var(--cinza-borda);
   }
-
-  .autor-info {}
-  .autor-nome {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--texto-claro);
-  }
-  .autor-cidade {
-    font-size: 12px;
-    color: var(--texto-muted);
-  }
+  .autor-foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .autor-nome { font-size: 14px; font-weight: 600; color: var(--texto-claro); }
+  .autor-cidade { font-size: 12px; color: var(--texto-muted); }
 
   /* OBJEÇÕES */
-  .objecoes-section {
-    background: var(--cinza-escuro);
-  }
-
-  .objecoes-list {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
+  .objecoes-section { background: var(--cinza-medio); }
+  .objecoes-list { margin-top: 40px; display: flex; flex-direction: column; gap: 16px; }
   .objecao-item {
     background: var(--cinza-card);
     border: 1px solid var(--cinza-borda);
@@ -689,7 +591,6 @@
     padding: 24px 28px;
     border-left: 3px solid var(--amarelo);
   }
-
   .objecao-pergunta {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 20px;
@@ -698,18 +599,10 @@
     text-transform: uppercase;
     margin-bottom: 10px;
   }
-
-  .objecao-resposta {
-    font-size: 15px;
-    color: #C8BFA8;
-    line-height: 1.7;
-  }
+  .objecao-resposta { font-size: 15px; color: #C8BFA8; line-height: 1.7; }
 
   /* GARANTIA */
-  .garantia-section {
-    background: var(--cinza-medio);
-  }
-
+  .garantia-section { background: var(--cinza-escuro); }
   .garantia-box {
     background: var(--cinza-card);
     border: 1px solid rgba(232,160,32,0.3);
@@ -719,10 +612,8 @@
     max-width: 600px;
     margin: 48px auto 0;
   }
-
   .garantia-icone {
-    width: 72px;
-    height: 72px;
+    width: 72px; height: 72px;
     border-radius: 50%;
     background: rgba(232,160,32,0.12);
     border: 2px solid rgba(232,160,32,0.3);
@@ -731,13 +622,7 @@
     justify-content: center;
     margin: 0 auto 24px;
   }
-
-  .garantia-icone svg {
-    width: 36px;
-    height: 36px;
-    stroke: var(--amarelo);
-  }
-
+  .garantia-icone svg { width: 36px; height: 36px; stroke: var(--amarelo); }
   .garantia-box h3 {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 28px;
@@ -745,31 +630,12 @@
     text-transform: uppercase;
     margin-bottom: 16px;
   }
-
-  .garantia-box p {
-    font-size: 16px;
-    color: #C8BFA8;
-    line-height: 1.7;
-  }
+  .garantia-box p { font-size: 16px; color: #C8BFA8; line-height: 1.7; }
 
   /* FAQ */
-  .faq-section {
-    background: var(--cinza-escuro);
-  }
-
-  .faq-list {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
-
-  .faq-item {
-    border: 1px solid var(--cinza-borda);
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
+  .faq-section { background: var(--cinza-medio); }
+  .faq-list { margin-top: 40px; display: flex; flex-direction: column; gap: 4px; }
+  .faq-item { border: 1px solid var(--cinza-borda); border-radius: 8px; overflow: hidden; }
   .faq-pergunta {
     width: 100%;
     background: var(--cinza-card);
@@ -787,21 +653,14 @@
     gap: 16px;
     transition: color 0.2s;
   }
-
   .faq-pergunta:hover { color: var(--amarelo); }
-
   .faq-arrow {
-    width: 20px;
-    height: 20px;
+    width: 20px; height: 20px;
     flex-shrink: 0;
     stroke: currentColor;
     transition: transform 0.25s;
   }
-
-  .faq-item.aberto .faq-arrow {
-    transform: rotate(180deg);
-  }
-
+  .faq-item.aberto .faq-arrow { transform: rotate(180deg); }
   .faq-resposta {
     display: none;
     padding: 0 24px 20px;
@@ -810,21 +669,11 @@
     color: #C8BFA8;
     line-height: 1.7;
   }
-
   .faq-item.aberto .faq-resposta { display: block; }
 
   /* CTA FINAL */
-  .cta-final {
-    background: var(--cinza-medio);
-    text-align: center;
-    padding: 96px 24px;
-  }
-
-  .cta-final-inner {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
+  .cta-final { background: var(--cinza-escuro); text-align: center; padding: 96px 24px; }
+  .cta-final-inner { max-width: 600px; margin: 0 auto; }
   .cta-final h2 {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: clamp(36px, 6vw, 58px);
@@ -833,21 +682,9 @@
     line-height: 1.05;
     margin-bottom: 20px;
   }
-
   .cta-final h2 .destaque { color: var(--amarelo); }
-
-  .cta-final p {
-    font-size: 17px;
-    color: #C8BFA8;
-    margin-bottom: 40px;
-    line-height: 1.7;
-  }
-
-  .cta-micro {
-    font-size: 13px;
-    color: var(--texto-muted);
-    margin-top: 16px;
-  }
+  .cta-final p { font-size: 17px; color: #C8BFA8; margin-bottom: 40px; line-height: 1.7; }
+  .cta-micro { font-size: 13px; color: var(--texto-muted); margin-top: 16px; }
 
   /* FOOTER */
   footer {
@@ -856,12 +693,6 @@
     padding: 32px 24px;
     text-align: center;
   }
-
-  .footer-inner {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
   .footer-logo {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 22px;
@@ -869,24 +700,17 @@
     color: var(--branco);
     margin-bottom: 8px;
   }
-
   .footer-logo span { color: var(--amarelo); }
+  footer p { font-size: 13px; color: var(--texto-muted); }
 
-  footer p {
-    font-size: 13px;
-    color: var(--texto-muted);
-  }
-
-  /* BOTÃO FLUTUANTE WHATSAPP */
+  /* WHATSAPP FLOAT */
   .whatsapp-float {
     position: fixed;
-    bottom: 24px;
-    right: 24px;
+    bottom: 24px; right: 24px;
     z-index: 200;
     background: #25D366;
     color: #fff;
-    width: 58px;
-    height: 58px;
+    width: 58px; height: 58px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -895,25 +719,14 @@
     box-shadow: 0 4px 16px rgba(37,211,102,0.35);
     transition: transform 0.2s, box-shadow 0.2s;
   }
+  .whatsapp-float:hover { transform: scale(1.08); box-shadow: 0 6px 24px rgba(37,211,102,0.45); }
+  .whatsapp-float svg { width: 30px; height: 30px; fill: #fff; }
 
-  .whatsapp-float:hover {
-    transform: scale(1.08);
-    box-shadow: 0 6px 24px rgba(37,211,102,0.45);
-  }
-
-  .whatsapp-float svg {
-    width: 30px;
-    height: 30px;
-    fill: #fff;
-  }
-
-  /* ANIMAÇÕES */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
 
-  /* MOBILE */
   @media (max-width: 600px) {
     section { padding: 60px 20px; }
     .hero { padding: 88px 20px 50px; }
@@ -925,7 +738,6 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
   <div class="logo"><span>MESTRE</span> DO DRYWALL</div>
   <a href="https://wa.me/5548988509001?text=Olá%20Gabriel!%20Vi%20seu%20site%20e%20gostaria%20de%20um%20orçamento." class="header-cta" target="_blank" rel="noopener">Pedir Orçamento</a>
@@ -943,10 +755,10 @@
     <p class="hero-desc">Obra limpa, sem poeira, sem surpresas no preço. Gabriel Fagundes cuida do seu projeto do início ao fim com quem realmente entende do assunto.</p>
     <div class="hero-ctas">
       <a href="https://wa.me/5548988509001?text=Olá%20Gabriel!%20Vi%20seu%20site%20e%20gostaria%20de%20um%20orçamento." class="btn-primary" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
         Pedir Orçamento Grátis
       </a>
-      <a href="#servicos" class="btn-ghost">Ver serviços</a>
+      <a href="#galeria" class="btn-ghost">Ver trabalhos</a>
     </div>
     <div class="hero-stats">
       <div class="stat-item">
@@ -965,7 +777,7 @@
   </div>
 </section>
 
-<!-- DIFERENCIAIS RÁPIDOS -->
+<!-- DIFERENCIAIS -->
 <div class="diferenciais">
   <div class="diferenciais-inner">
     <div class="dif-item">Obra sem poeira</div>
@@ -976,42 +788,60 @@
   </div>
 </div>
 
+<!-- SOBRE O GABRIEL -->
+<section class="sobre-section">
+  <div class="container">
+    <div class="section-tag">Quem faz o serviço</div>
+    <div class="sobre-grid">
+      <div class="sobre-foto-wrap">
+        <img src="foto-gabriel.jpeg" alt="Gabriel Fagundes, especialista em drywall em Florianópolis">
+        <div class="sobre-foto-badge">
+          <strong>11</strong>anos de<br>experiência
+        </div>
+      </div>
+      <div class="sobre-texto">
+        <h3>Gabriel Fagundes</h3>
+        <p class="sobre-cargo">Especialista em Drywall, Pintura e Texturas</p>
+        <p>29 anos e mais de uma década trabalhando com drywall em Florianópolis. Cada projeto recebe atenção total, do planejamento ao acabamento final.</p>
+        <p>Gabriel não terceiriza e não some no meio do serviço. Você fala direto com quem vai executar, combina o prazo, fecha o preço e acompanha tudo pelo WhatsApp.</p>
+        <p>Obra limpa, resultado impecável e preço que não muda depois que o serviço começa.</p>
+        <div class="sobre-nums">
+          <div class="sobre-num-item">
+            <div class="num">11</div>
+            <div class="label">Anos de experiência</div>
+          </div>
+          <div class="sobre-num-item">
+            <div class="num">FLN</div>
+            <div class="label">Grande Florianópolis</div>
+          </div>
+          <div class="sobre-num-item">
+            <div class="num">100%</div>
+            <div class="label">Atendimento direto</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- DOR -->
 <section class="dor-section">
   <div class="container">
     <div class="section-tag">O problema</div>
     <h2 class="section-title">Quem já fez obra<br>sabe como é.</h2>
     <div class="dor-grid">
-      <div class="dor-card">
-        <div class="dor-icon">💨</div>
-        <p>A poeira que invade tudo e leva semanas pra sair da casa</p>
-      </div>
-      <div class="dor-card">
-        <div class="dor-icon">👻</div>
-        <p>O prestador que some no meio do serviço sem dar satisfação</p>
-      </div>
-      <div class="dor-card">
-        <div class="dor-icon">📅</div>
-        <p>O prazo que vira estimativa, depois vira promessa, depois vira piada</p>
-      </div>
-      <div class="dor-card">
-        <div class="dor-icon">💸</div>
-        <p>O preço que começa em um valor e termina em outro bem maior</p>
-      </div>
-      <div class="dor-card">
-        <div class="dor-icon">😤</div>
-        <p>A reforma que parecia simples e virou um pesadelo de meses</p>
-      </div>
-      <div class="dor-card">
-        <div class="dor-icon">🔇</div>
-        <p>Ninguém pra explicar o que está sendo feito ou quando termina</p>
-      </div>
+      <div class="dor-card"><div class="dor-icon">💨</div><p>A poeira que invade tudo e leva semanas pra sair da casa</p></div>
+      <div class="dor-card"><div class="dor-icon">👻</div><p>O prestador que some no meio do serviço sem dar satisfação</p></div>
+      <div class="dor-card"><div class="dor-icon">📅</div><p>O prazo que vira estimativa, depois vira promessa, depois vira piada</p></div>
+      <div class="dor-card"><div class="dor-icon">💸</div><p>O preço que começa em um valor e termina em outro bem maior</p></div>
+      <div class="dor-card"><div class="dor-icon">😤</div><p>A reforma que parecia simples e virou um pesadelo de meses</p></div>
+      <div class="dor-card"><div class="dor-icon">🔇</div><p>Ninguém pra explicar o que está sendo feito ou quando termina</p></div>
     </div>
   </div>
 </section>
 
 <!-- SOLUÇÃO -->
-<section style="background: var(--cinza-escuro);">
+<section class="solucao-section">
   <div class="container">
     <div class="section-tag">A solução</div>
     <div class="solucao-grid">
@@ -1021,13 +851,8 @@
         <p>Gabriel aplica drywall com o acabamento de quem aprendeu fazendo, não lendo manual. Em 11 anos, cada detalhe foi aperfeiçoado, do planejamento à entrega.</p>
         <p>Preço combinado antes de começar. O que foi acertado é o que você paga. Sem surpresas.</p>
       </div>
-      <div class="foto-placeholder" style="aspect-ratio: 4/3;">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="galeria-placeholder-icon">
-          <rect x="3" y="3" width="18" height="18" rx="2" stroke-width="1.5" stroke="currentColor"/>
-          <circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="1.5"/>
-          <path d="m21 15-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-        <span class="galeria-placeholder-text">Foto do trabalho<br><small>Adicionar via GitHub</small></span>
+      <div class="solucao-foto">
+        <img src="drywall01.jpeg" alt="Resultado de instalação de drywall por Gabriel Fagundes">
       </div>
     </div>
   </div>
@@ -1043,17 +868,17 @@
       <div class="servico-card destaque">
         <div class="servico-num">01</div>
         <h3>Drywall</h3>
-        <p>Paredes, divisórias, forros e tetos em drywall. Instalação limpa, rápida e com acabamento impecável. A especialidade do Gabriel.</p>
+        <p>Paredes, divisórias, forros e tetos em drywall. Instalação limpa, rápida e com acabamento impecável.</p>
       </div>
       <div class="servico-card">
         <div class="servico-num">02</div>
         <h3>Pintura</h3>
-        <p>Pintura profissional para ambientes internos. Preparação correta da superfície e resultado final que dura.</p>
+        <p>Pintura profissional para ambientes internos. Preparação correta da superfície e resultado que dura.</p>
       </div>
       <div class="servico-card">
         <div class="servico-num">03</div>
         <h3>Textura</h3>
-        <p>Texturas decorativas que valorizam o ambiente. Variedade de acabamentos para combinar com qualquer estilo.</p>
+        <p>Texturas decorativas que valorizam o ambiente. Variedade de acabamentos para qualquer estilo.</p>
       </div>
       <div class="servico-card">
         <div class="servico-num">04</div>
@@ -1071,39 +896,27 @@
     <h2 class="section-title">O que você recebe<br>em cada projeto</h2>
     <div class="beneficios-list">
       <div class="beneficio-item">
-        <div class="beneficio-check">
-          <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
+        <div class="beneficio-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <p>Obra sem poeira nem bagunça, seu espaço continua habitável durante o serviço</p>
       </div>
       <div class="beneficio-item">
-        <div class="beneficio-check">
-          <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
+        <div class="beneficio-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <p>Acabamento impecável que valoriza o imóvel de verdade</p>
       </div>
       <div class="beneficio-item">
-        <div class="beneficio-check">
-          <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
+        <div class="beneficio-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <p>Prazo combinado e cumprido, porque organização faz parte do trabalho</p>
       </div>
       <div class="beneficio-item">
-        <div class="beneficio-check">
-          <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
+        <div class="beneficio-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <p>Preço justo fechado antes de começar, sem cobranças que aparecem do nada</p>
       </div>
       <div class="beneficio-item">
-        <div class="beneficio-check">
-          <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
+        <div class="beneficio-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <p>Atendimento direto com quem vai colocar a mão na massa, sem intermediário</p>
       </div>
       <div class="beneficio-item">
-        <div class="beneficio-check">
-          <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
+        <div class="beneficio-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <p>Pintura e textura integradas ao projeto, tudo resolvido com quem já conhece o espaço</p>
       </div>
     </div>
@@ -1117,55 +930,47 @@
     <h2 class="section-title">Os resultados<br>falam por si.</h2>
     <p class="section-desc">Cada projeto entregue com o mesmo cuidado e atenção ao detalhe.</p>
     <div class="galeria-grid">
-      <!-- Para adicionar fotos: substitua o conteúdo de cada .galeria-item por <img src="URL_DA_FOTO" alt="Descrição"> -->
       <div class="galeria-item">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="galeria-placeholder-icon">
-          <rect x="3" y="3" width="18" height="18" rx="2" stroke-width="1.5" stroke="currentColor"/>
-          <circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="1.5"/>
-          <path d="m21 15-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-        <span class="galeria-placeholder-text">Foto 1</span>
+        <img src="drywall01.jpeg" alt="Instalação de drywall em Florianópolis">
+        <div class="overlay"></div>
       </div>
       <div class="galeria-item">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="galeria-placeholder-icon">
-          <rect x="3" y="3" width="18" height="18" rx="2" stroke-width="1.5" stroke="currentColor"/>
-          <circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="1.5"/>
-          <path d="m21 15-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-        <span class="galeria-placeholder-text">Foto 2</span>
+        <img src="drywall02.jpeg" alt="Trabalho de drywall finalizado">
+        <div class="overlay"></div>
       </div>
       <div class="galeria-item">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="galeria-placeholder-icon">
-          <rect x="3" y="3" width="18" height="18" rx="2" stroke-width="1.5" stroke="currentColor"/>
-          <circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="1.5"/>
-          <path d="m21 15-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-        <span class="galeria-placeholder-text">Foto 3</span>
+        <img src="drywall03.jpeg" alt="Divisória em drywall">
+        <div class="overlay"></div>
       </div>
       <div class="galeria-item">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="galeria-placeholder-icon">
-          <rect x="3" y="3" width="18" height="18" rx="2" stroke-width="1.5" stroke="currentColor"/>
-          <circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="1.5"/>
-          <path d="m21 15-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-        <span class="galeria-placeholder-text">Foto 4</span>
+        <img src="drywall04.jpeg" alt="Forro em drywall">
+        <div class="overlay"></div>
       </div>
       <div class="galeria-item">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="galeria-placeholder-icon">
-          <rect x="3" y="3" width="18" height="18" rx="2" stroke-width="1.5" stroke="currentColor"/>
-          <circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="1.5"/>
-          <path d="m21 15-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-        <span class="galeria-placeholder-text">Foto 5</span>
+        <img src="resultado-pintura-acabamento.jpeg" alt="Resultado de pintura e acabamento">
+        <div class="overlay"></div>
       </div>
-      <div class="galeria-item">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="galeria-placeholder-icon">
-          <rect x="3" y="3" width="18" height="18" rx="2" stroke-width="1.5" stroke="currentColor"/>
-          <circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="1.5"/>
-          <path d="m21 15-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-        <span class="galeria-placeholder-text">Foto 6</span>
+      <div class="galeria-item" style="display:flex;align-items:center;justify-content:center;background:rgba(232,160,32,0.08);border:1px solid rgba(232,160,32,0.25);">
+        <a href="https://wa.me/5548988509001?text=Olá%20Gabriel!%20Vi%20seus%20trabalhos%20e%20gostaria%20de%20um%20orçamento." target="_blank" rel="noopener" style="text-align:center;text-decoration:none;padding:24px;">
+          <div style="font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:var(--amarelo);text-transform:uppercase;line-height:1.2;margin-bottom:8px;">Quer um resultado assim?</div>
+          <div style="font-size:13px;color:var(--texto-muted);">Pedir orçamento grátis</div>
+        </a>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- VÍDEO -->
+<section class="video-section">
+  <div class="container">
+    <div class="section-tag">Veja na prática</div>
+    <h2 class="section-title">O trabalho em<br>movimento.</h2>
+    <p class="section-desc">Pintura e acabamento com resultado profissional.</p>
+    <div class="video-wrap">
+      <video controls preload="metadata" poster="resultado-pintura-acabamento.jpeg">
+        <source src="videopinturaacabamento.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo HTML5.
+      </video>
     </div>
   </div>
 </section>
@@ -1178,55 +983,39 @@
     <div class="depoimentos-grid">
       <div class="depoimento-card">
         <div class="estrelas">
-          <svg class="estrela" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="estrela" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="estrela" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="estrela" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="estrela" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="estrela" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="estrela" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="estrela" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="estrela" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="estrela" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         </div>
-        <blockquote>[INSERIR DEPOIMENTO — foco em: prazo cumprido ou obra limpa]</blockquote>
+        <blockquote>Obrigado pelo trabalho e atenção! Ficou realmente muito bom!!! Logo teremos mais pinturas aqui e daí te chamo.</blockquote>
         <div class="depoimento-autor">
-          <div class="autor-avatar">??</div>
-          <div class="autor-info">
-            <div class="autor-nome">[Nome do cliente]</div>
+          <div class="autor-foto"><img src="feedback1.jpeg" alt="João Cruz"></div>
+          <div>
+            <div class="autor-nome">João Cruz</div>
             <div class="autor-cidade">Florianópolis, SC</div>
           </div>
         </div>
       </div>
       <div class="depoimento-card">
         <div class="estrelas">
-          <svg class="estrela" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="estrela" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="estrela" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="estrela" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="estrela" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="estrela" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="estrela" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="estrela" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="estrela" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="estrela" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         </div>
-        <blockquote>[INSERIR DEPOIMENTO — foco em: atendimento e transparência no preço]</blockquote>
+        <blockquote>Boa noite Gabriel, ficou perfeito, ficou exatamente como a gente queria. Obrigado por tudo!</blockquote>
         <div class="depoimento-autor">
-          <div class="autor-avatar">??</div>
-          <div class="autor-info">
-            <div class="autor-nome">[Nome do cliente]</div>
+          <div class="autor-foto"><img src="feedback2.jpeg" alt="Cliente"></div>
+          <div>
+            <div class="autor-nome">Cliente</div>
             <div class="autor-cidade">Florianópolis, SC</div>
           </div>
         </div>
       </div>
-      <div class="depoimento-card">
-        <div class="estrelas">
-          <svg class="estrela" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="estrela" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="estrela" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="estrela" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="estrela" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <blockquote>[INSERIR DEPOIMENTO — foco em: qualidade do acabamento final]</blockquote>
-        <div class="depoimento-autor">
-          <div class="autor-avatar">??</div>
-          <div class="autor-info">
-            <div class="autor-nome">[Nome do cliente]</div>
-            <div class="autor-cidade">Florianópolis, SC</div>
-          </div>
-        </div>
-      </div>
+
     </div>
   </div>
 </section>
@@ -1260,7 +1049,7 @@
     <h2 class="section-title" style="text-align:center;">Compromisso<br>total com o resultado</h2>
     <div class="garantia-box">
       <div class="garantia-icone">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 24 24" fill="none">
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="m9 12 2 2 4-4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
@@ -1280,42 +1069,42 @@
       <div class="faq-item">
         <button class="faq-pergunta" onclick="toggleFaq(this)">
           Drywall serve para qualquer tipo de ambiente?
-          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none"><path d="m6 9 6 6 6-6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="faq-resposta">Sim. Paredes, divisórias, forros, tetos, closets e muito mais. O Gabriel avalia seu espaço e indica a melhor solução antes de qualquer coisa.</div>
       </div>
       <div class="faq-item">
         <button class="faq-pergunta" onclick="toggleFaq(this)">
           Quanto tempo dura um serviço de drywall?
-          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none"><path d="m6 9 6 6 6-6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="faq-resposta">Depende do projeto, mas a execução é bem mais rápida do que alvenaria tradicional. O prazo é definido no orçamento e respeitado.</div>
       </div>
       <div class="faq-item">
         <button class="faq-pergunta" onclick="toggleFaq(this)">
           Realmente não faz sujeira?
-          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none"><path d="m6 9 6 6 6-6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="faq-resposta">Drywall é construção a seco. Sem água, sem massa grossa, sem aquela poeira que fica por semanas. É um dos maiores motivos de quem mora no espaço optar por drywall.</div>
       </div>
       <div class="faq-item">
         <button class="faq-pergunta" onclick="toggleFaq(this)">
           Atende em qual região de Florianópolis?
-          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none"><path d="m6 9 6 6 6-6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="faq-resposta">Toda a Grande Florianópolis. Confirme sua região pelo WhatsApp e o Gabriel retorna rapidamente.</div>
       </div>
       <div class="faq-item">
         <button class="faq-pergunta" onclick="toggleFaq(this)">
           Pintura e textura também estão incluídos?
-          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none"><path d="m6 9 6 6 6-6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="faq-resposta">Sim. Gabriel é especialista em pintura e texturas também. Você pode resolver tudo com quem já conhece o projeto e o espaço.</div>
       </div>
       <div class="faq-item">
         <button class="faq-pergunta" onclick="toggleFaq(this)">
           Como funciona o orçamento?
-          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none"><path d="m6 9 6 6 6-6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="faq-resposta">Gratuito e sem compromisso. Manda uma mensagem no WhatsApp, combina uma visita e recebe o orçamento detalhado antes de qualquer decisão.</div>
       </div>
@@ -1329,39 +1118,34 @@
     <div class="section-tag" style="text-align:center;">Próximo passo</div>
     <h2>Chega de adiar.<br><span class="destaque">Fala com o Gabriel.</span></h2>
     <p>Orçamento gratuito, resposta rápida e atendimento direto com quem vai executar o serviço. 11 anos de experiência a seu favor.</p>
-    <a href="https://wa.me/5548988509001?text=Olá%20Gabriel!%20Vi%20seu%20site%20e%20gostaria%20de%20um%20orçamento%20gratuito." class="btn-primary" target="_blank" rel="noopener" style="font-size:17px; padding:18px 40px; display:inline-flex;">
-      <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="width:22px;height:22px;flex-shrink:0;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    <a href="https://wa.me/5548988509001?text=Olá%20Gabriel!%20Vi%20seu%20site%20e%20gostaria%20de%20um%20orçamento%20gratuito." class="btn-primary" target="_blank" rel="noopener" style="font-size:17px;padding:18px 40px;display:inline-flex;">
+      <svg viewBox="0 0 24 24" fill="currentColor" style="width:22px;height:22px;flex-shrink:0;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
       Falar com o Gabriel no WhatsApp
     </a>
     <p class="cta-micro">Orçamento gratuito. Sem compromisso. Agenda limitada.</p>
   </div>
 </section>
 
-<!-- PS -->
-<div style="background:#111111; border-top:1px solid var(--cinza-borda); padding:24px; text-align:center;">
-  <p style="font-size:14px; color:var(--texto-muted); max-width:500px; margin:0 auto; line-height:1.7;"><strong style="color:#C8BFA8;">PS:</strong> O orçamento é gratuito e não gera nenhum compromisso. Se você está pensando em reformar, o melhor momento pra perguntar é agora. Agenda limitada.</p>
+<div style="background:#111111;border-top:1px solid var(--cinza-borda);padding:24px;text-align:center;">
+  <p style="font-size:14px;color:var(--texto-muted);max-width:500px;margin:0 auto;line-height:1.7;"><strong style="color:#C8BFA8;">PS:</strong> O orçamento é gratuito e não gera nenhum compromisso. Se você está pensando em reformar, o melhor momento pra perguntar é agora. Agenda limitada.</p>
 </div>
 
-<!-- FOOTER -->
 <footer>
-  <div class="footer-inner">
+  <div style="max-width:900px;margin:0 auto;">
     <div class="footer-logo"><span>MESTRE</span> DO DRYWALL</div>
     <p>Gabriel Fagundes | Florianópolis, SC | (48) 98850-9001</p>
     <p style="margin-top:8px;">© 2025 Mestre do Drywall. Todos os direitos reservados.</p>
   </div>
 </footer>
 
-<!-- BOTÃO FLUTUANTE WHATSAPP -->
 <a href="https://wa.me/5548988509001?text=Olá%20Gabriel!%20Vi%20seu%20site%20e%20gostaria%20de%20um%20orçamento." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
 </a>
 
 <script>
 function toggleFaq(btn) {
-  var item = btn.parentElement;
-  item.classList.toggle('aberto');
+  btn.parentElement.classList.toggle('aberto');
 }
 </script>
-
 </body>
 </html>
