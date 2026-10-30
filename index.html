@@ -137,6 +137,40 @@
     width: 100%;
     margin: 0 auto;
   }
+  .hero-inner.com-foto {
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 56px;
+    align-items: center;
+  }
+  .hero-foto {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(44,166,176,0.35);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+  }
+  .hero-foto img { display: block; width: 100%; height: auto; }
+  .hero-foto .tag {
+    position: absolute;
+    left: 14px;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #fff;
+    background: rgba(26,26,26,0.85);
+  }
+  .hero-foto .tag.t1 { top: 14px; }
+  .hero-foto .tag.t2 { top: calc(50% + 14px); background: var(--verde-ok); }
+  @media (max-width: 900px) {
+    .hero-inner.com-foto { grid-template-columns: 1fr; gap: 40px; }
+    .hero-foto { max-width: 460px; width: 100%; margin: 0 auto; }
+  }
   .hero-badge {
     display: inline-flex;
     align-items: center;
@@ -842,7 +876,8 @@
   <div class="hero-bg"></div>
   <div class="hero-pattern"></div>
   <div class="hero-accent"></div>
-  <div class="hero-inner">
+  <div class="hero-inner com-foto">
+   <div class="hero-texto">
     <div class="hero-badge">Especialista em Drywall em Florianópolis</div>
     <h1>DRYWALL<br><span class="destaque">FEITO</span> DO<br>JEITO CERTO.</h1>
     <p class="hero-sub">Por quem faz isso há 11 anos.</p>
@@ -868,6 +903,11 @@
         <div class="stat-label">Grande Florianópolis</div>
       </div>
     </div>
+   </div>
+   <div class="hero-foto">
+     <img src="principal.jpeg" alt="Obra do Gabriel: estrutura montada e a casa depois de fechada" width="775" height="1082">
+     <span class="tag t1">Antes</span><span class="tag t2">Depois</span>
+   </div>
   </div>
 </section>
 
@@ -932,7 +972,7 @@
         <p>Preço combinado antes de começar. O que foi acertado é o que você paga. Sem surpresas.</p>
       </div>
       <div class="solucao-foto">
-        <img src="drywall01.jpeg" alt="Resultado de instalação de drywall por Gabriel Fagundes">
+        <img src="drywall-sala.jpeg" alt="Ambiente com paredes e forro em drywall montados por Gabriel Fagundes">
       </div>
     </div>
   </div>
@@ -943,14 +983,14 @@
   <div class="container">
     <div class="section-tag">Transformação real</div>
     <h2 class="section-title">Antes e depois<br>do trabalho do Gabriel</h2>
-    <p class="section-desc">A diferença fala por si. Do forro exposto ao acabamento pronto para morar.</p>
+    <p class="section-desc">A diferença fala por si. Da estrutura montada à obra fechada.</p>
     <div class="antes-depois-grid">
       <div class="antes-depois-item antes">
-        <img src="antes.jpeg" alt="Antes da instalação de drywall">
+        <img src="antes.jpeg" alt="Estrutura montada, antes do fechamento">
         <div class="antes-depois-label">Antes</div>
       </div>
       <div class="antes-depois-item depois">
-        <img src="depois.jpeg" alt="Depois da instalação de drywall">
+        <img src="depois.jpeg" alt="Casa fechada, depois do trabalho">
         <div class="antes-depois-label">Depois</div>
       </div>
     </div>
@@ -1030,23 +1070,35 @@
     <p class="section-desc">Cada projeto entregue com o mesmo cuidado e atenção ao detalhe.</p>
     <div class="galeria-grid">
       <div class="galeria-item">
-        <img src="drywall01.jpeg" alt="Instalação de drywall em Florianópolis">
+        <img src="drywall-corredor.jpeg" alt="Corredor com paredes em drywall" loading="lazy">
         <div class="overlay"></div>
       </div>
       <div class="galeria-item">
-        <img src="drywall02.jpeg" alt="Trabalho de drywall finalizado">
+        <img src="estrutura-sobrado.jpeg" alt="Estrutura de sobrado montada" loading="lazy">
         <div class="overlay"></div>
       </div>
       <div class="galeria-item">
-        <img src="drywall03.jpeg" alt="Divisória em drywall">
+        <img src="drywall-parede.jpeg" alt="Parede em drywall com porta" loading="lazy">
         <div class="overlay"></div>
       </div>
       <div class="galeria-item">
-        <img src="drywall04.jpeg" alt="Forro em drywall">
+        <img src="estrutura-casa.jpeg" alt="Estrutura de casa montada" loading="lazy">
         <div class="overlay"></div>
       </div>
       <div class="galeria-item">
-        <img src="resultado-pintura-acabamento.jpeg" alt="Resultado de pintura e acabamento">
+        <img src="drywall-corredor2.jpeg" alt="Corredor em drywall pronto para pintura" loading="lazy">
+        <div class="overlay"></div>
+      </div>
+      <div class="galeria-item">
+        <img src="estrutura-pergolado.jpeg" alt="Estrutura de pergolado" loading="lazy">
+        <div class="overlay"></div>
+      </div>
+      <div class="galeria-item">
+        <img src="estrutura-dois-andares.jpeg" alt="Estrutura de dois andares" loading="lazy">
+        <div class="overlay"></div>
+      </div>
+      <div class="galeria-item">
+        <img src="estrutura-trelica.jpeg" alt="Detalhe da estrutura do telhado" loading="lazy">
         <div class="overlay"></div>
       </div>
       <div class="galeria-item" style="display:flex;align-items:center;justify-content:center;background:rgba(44,166,176,0.08);border:1px solid rgba(44,166,176,0.25);">
